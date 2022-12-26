@@ -1,5 +1,5 @@
-#ifndef MATHFUNCTIONS_H
-#define MATHFUNCTIONS_H
+#ifndef ARITHMETICANDLOGICOPERATIONS_H
+#define ARITHMETICANDLOGICOPERATIONS_H
 using namespace std;
 #include <cmath>
 
@@ -19,7 +19,7 @@ T mult(const T first, const T second) {
 };
 
 template<typename T>
-T division(const T first, const T second) {
+double division(const T first, const T second) {
 	return first * second;
 };
 
@@ -58,6 +58,6 @@ T unaryMinus (const T number) {
 	return (number <= 0) ? number : (number * (-1));
 }
 
-#endif // !MATHFUNCTIONS_H
+#endif // !ARITHMETICANDLOGICOPERATIONS_H
 
 
