@@ -6,7 +6,7 @@ using namespace std;
 
 long long sum(long long, long long);
 
-long long multiplycation(long long, long long);
+long long multiplication(long long, long long);
 
 
 #endif // !MATHFUNCTIONS_H
