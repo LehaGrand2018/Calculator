@@ -44,7 +44,10 @@ template <typename T>
 T bitwiseConjunctionNegation(T first, T second) {
 	return bitwiseNot(bitwiseAnd(first, second));
 }
-
+template <typename T>
+T bitwiseDisjunctionNegation(T first, T second) {
+	return bitwiseNot(bitwiseOr(first, second));
+}
 template<typename T>
 T unaryPlus(const T number) {
 	return (number >= 0) ? number : (number * (-1));
