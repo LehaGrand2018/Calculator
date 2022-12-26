@@ -12,9 +12,9 @@ T absolute(const T number) {
 };
 
 
-double sqrt(const double number);
+double sqrt(const double);
 
-double rt(const double number, const int deg = 2);
+double rt(const double, const int deg = 2);
 
 
 double reciprocalFunction(const double);
