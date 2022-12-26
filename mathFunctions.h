@@ -28,8 +28,21 @@ T bitwiseNot(T number) {
 }
 template <typename T>
 T bitwiseAnd(T first, T second) {
-	return first && second;
+	return first & second;
 }
+template <typename T>
+T bitwiseOr(T first, T second) {
+	return first | second;
+}
+template <typename T>
+T bitwiseExclusiveOr(T first, T second) {
+	return first ^ second;
+}
+template <typename T>
+T bitwiseConjunctionNegation(T first, T second) {
+	return bitwiseNot(bitwiseAnd(first, second));
+}
+
 
 template<typename T>
 T unaryPlus(const T number) {
