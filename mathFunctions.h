@@ -4,10 +4,27 @@
 using namespace std;
 #include <cmath>
 
-long long addition(long long, long long);
 
-long long multiplication(long long, long long);
 
+template<typename T>
+long long int sum(T first, T second) {
+	return first + second;
+}
+
+template<typename T>
+long long sub(T first, T second) {
+	return first - second;
+};
+
+template<typename T>
+long long mult(T first, T second) {
+	return first * second;
+};
+
+template<typename T>
+long long division(T first, T second) {
+	return first * second;
+};
 
 
 #endif // !MATHFUNCTIONS_H
