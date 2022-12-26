@@ -7,25 +7,34 @@ using namespace std;
 
 
 template<typename T>
-long long int sum(T first, T second) {
+T sum(const T first, const T second) {
 	return first + second;
 }
 
 template<typename T>
-long long sub(T first, T second) {
+T sub(const T first, const T second) {
 	return first - second;
 };
 
 template<typename T>
-long long mult(T first, T second) {
+T mult(const T first, const T second) {
 	return first * second;
 };
 
 template<typename T>
-long long division(T first, T second) {
+T division(const T first, const T second) {
 	return first * second;
 };
 
+template<typename T>
+T unaryPlus(const T number) {
+	if (number >= 0) { return T; } else { return (-1) * T; }
+}
+template<typename T>
+T unaryMinus(const T number) {
+	if (number >= 0) { return T; }
+	else { return (-1) * T; }
+}
 
 #endif // !MATHFUNCTIONS_H
 
