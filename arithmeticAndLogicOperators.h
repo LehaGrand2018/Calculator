@@ -24,30 +24,52 @@ T division(const T first, const T second) {
 };
 
 template <typename T>
-T bitwiseNot(T number) {
+T bitwiseNot(const T number) {
 	return ~number;
 }
 
 template <typename T>
-T bitwiseAnd(T first, T second) {
+T bitwiseAnd(const T first, const T second) {
 	return first && second;
 }
 template <typename T>
-T bitwiseOr(T first, T second) {
+T bitwiseOr(const T first, const T second) {
 	return first | second;
 }
 template <typename T>
-T bitwiseExclusiveOr(T first, T second) {
+T bitwiseExclusiveOr(const T first, const T second) {
 	return first ^ second;
 }
 template <typename T>
-T bitwiseConjunctionNegation(T first, T second) {
+T bitwiseConjunctionNegation(const T first, const T second) {
 	return bitwiseNot(bitwiseAnd(first, second));
 }
 template <typename T>
-T bitwiseDisjunctionNegation(T first, T second) {
+T bitwiseDisjunctionNegation(const T first, const T second) {
 	return bitwiseNot(bitwiseOr(first, second));
 }
+template <typename T>
+T leftShift(const T number, const int shift, const bool isLogic = true) {
+	if (isLogic) {
+		return number << shift;
+	}
+	T shift_number = 0;
+	for (int i = 0; i < shift; i++) {
+		shift_number += pow(2, i);
+	}
+	return bitwiseOr(shift_number, number << shift);
+}
+//template <typename T>
+//T rightShift(const T number, const int shift, const bool isLogic = true) {
+//	if (isLogic) {
+//		return number >> shift;
+//	}
+//	T shift_number = 0;
+//	for (int i = ; i < shift; i++) {
+//		shift_number += pow(2, i);
+//	}
+//	return bitwiseOr(shift_number, number >> shift);
+//}
 template<typename T>
 T unaryPlus(const T number) {
 	return (number >= 0) ? number : (number * (-1));
