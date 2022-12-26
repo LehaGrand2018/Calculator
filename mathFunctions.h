@@ -33,12 +33,12 @@ T bitwiseAnd(T first, T second {
 
 template<typename T>
 T unaryPlus(const T number) {
-	if (number >= 0) { return T; } else { return (-1) * T; }
+	return (number >= 0) ? number : (number * (-1));
 }
+
 template<typename T>
-T unaryMinus(const T number) {
-	if (number >= 0) { return T; }
-	else { return (-1) * T; }
+T unaryMinus (const T number) {
+	return (number <= 0) ? number : (number * (-1));
 }
 
 #endif // !MATHFUNCTIONS_H
