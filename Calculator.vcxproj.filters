@@ -20,6 +20,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arithmeticAndLogicOperators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="mathFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
