@@ -27,7 +27,7 @@ T bitwiseNot(T number) {
 	return ~number;
 }
 template <typename T>
-T bitwiseAnd(T first, T second {
+T bitwiseAnd(T first, T second) {
 	return first && second;
 }
 
