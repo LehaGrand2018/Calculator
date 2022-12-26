@@ -42,8 +42,14 @@ template <typename T>
 T bitwiseConjunctionNegation(T first, T second) {
 	return bitwiseNot(bitwiseAnd(first, second));
 }
+template <typename T>
+T bitwiseDisjunctionNegation(T first, T second) {
+	return bitwiseNot(bitwiseOr(first, second));
+}
+template <typename T>
+T leftShift(T number, int shift, bool isLogic) {
 
-
+}
 template<typename T>
 T unaryPlus(const T number) {
 	if (number >= 0) { return T; } else { return (-1) * T; }
