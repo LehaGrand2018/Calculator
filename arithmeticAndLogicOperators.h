@@ -59,17 +59,35 @@ T leftShift(const T number, const int shift, const bool isLogic = true) {
 	}
 	return bitwiseOr(shift_number, number << shift);
 }
-//template <typename T>
-//T rightShift(const T number, const int shift, const bool isLogic = true) {
-//	if (isLogic) {
-//		return number >> shift;
-//	}
-//	T shift_number = 0;
-//	for (int i = ; i < shift; i++) {
-//		shift_number += pow(2, i);
-//	}
-//	return bitwiseOr(shift_number, number >> shift);
-//}
+template <typename T>
+T rightShift(const T number, const int shift, const bool isLogic = true) {
+	if (isLogic) {
+		return number >> shift;
+	}
+	T shift_number = pow(2,30);
+	for (int i = 29; i > 30 - shift; i--) {
+		shift_number += pow(2, i);
+	}
+	return bitwiseOr(shift_number, number >> shift);
+}
+bool negation(bool value) {
+	return !value;
+}
+bool conjunction(bool first, bool second) {
+	return (first && second);
+}
+bool disjunction(bool first, bool second) {
+	return (first || second);
+}
+bool exclusiveOr(bool first, bool second) {
+	return (first ^ second);
+}
+bool conjunctionNegation(bool first, bool second) {
+	return negation(conjunction(first, second));
+}
+bool disjunctionNegation(bool first, bool second) {
+	return negation(disjunction(first, second));
+}
 template<typename T>
 T unaryPlus(const T number) {
 	return (number >= 0) ? number : (number * (-1));
