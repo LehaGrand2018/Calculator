@@ -129,10 +129,17 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mathFunctions.cpp" />
+    <ClCompile Include="sortFunctions.cpp" />
+    <ClCompile Include="sortFunctions.h" />
+    <ClCompile Include="StackOnList.cpp" />
+    <ClCompile Include="stringFunctions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arithmeticAndLogicOperators.h" />
+    <ClInclude Include="inputOutputFunctions.h" />
     <ClInclude Include="mathFunctions.h" />
+    <ClInclude Include="StackOnList.h" />
+    <ClInclude Include="stringFunctions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

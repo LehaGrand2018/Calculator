@@ -1,8 +1,5 @@
 #include "mathFunctions.h"
-
-
 using namespace calculator;
-
 
 long long calculator::factorial(const long long number) {
 	if (number < 0) {

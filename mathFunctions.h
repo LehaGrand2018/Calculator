@@ -1,6 +1,7 @@
 #ifndef MATHFUNCTIONS_H
 #define MATHFUNCTIONS_H
 namespace calculator {
+
 #define EPSILON 0.000'000'001
 
 template<typename T>
@@ -109,4 +110,4 @@ double cotDeg(T arg) {
 
 
 }
-#endif // !MATHFUNCTIONS_H
+#endif MATHFUNCTIONS_H

@@ -1,7 +1,7 @@
 #ifndef ARITHMETICANDLOGICOPERATIONS_H
 #define ARITHMETICANDLOGICOPERATIONS_H
-#include <cmath>
 namespace calculator {
+
 	template<typename T>
 	T sum(const T first, const T second) {
 		return first + second;
@@ -97,6 +97,6 @@ namespace calculator {
 		return (number <= 0) ? number : (number * (-1));
 	}
 }
-#endif // !ARITHMETICANDLOGICOPERATIONS_H
+#endif ARITHMETICANDLOGICOPERATIONS_H
 
 
