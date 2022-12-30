@@ -9,6 +9,9 @@ namespace calculator {
     void selectionSort(std::vector<int>& array, std::function<bool(int, int)> comp = ascending);
     void doubleSelectionSort(std::vector<int>& array, std::function<bool(int, int)> comp = ascending);
     void bubbleSort(std::vector<int>& array, std::function<bool(int, int)> comp = ascending);
+    void insertionSort(std::vector<int>& array, std::function<bool(int, int)> comp = ascending);
+    void shellSort(std::vector<int>& array, std::function<bool(int, int)> comp);
+    void shakerSort(std::vector<int>& array, std::function<bool(int, int)> comp = ascending);
 
 
 
