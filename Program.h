@@ -14,7 +14,7 @@ using namespace calculator;
 class Program {
 public:
 	static int main() {
-		setlocale(LC_ALL, "rus");
+		/*setlocale(LC_ALL, "rus");
 		cout << "Что вы хотите делать?\n1. Воспользоваться длинной арифметикой"
 			 << "\n2. Воспользоваться конкретной функцией\n";
 		int variant;
@@ -33,8 +33,10 @@ public:
 		default:
 			cout << "Неправильный вариант ответа. Попробуйте еще раз!\n";
 			break;
-		}
-
+		}*/
+		cout << cosDeg(-60);
+		return 0;
+		
 
 
 

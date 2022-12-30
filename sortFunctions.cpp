@@ -1,7 +1,7 @@
 #include "sortFunctions.h"
 using namespace calculator;
 
-void calculator::selectionSort(std::vector<int>& array, std::function<bool(int, int)> comp) {
+void selectionSort(std::vector<int>& array, std::function<bool(int, int)> comp) {
     for (int i = 0; i < array.size() - 1; i++) {
         int min = i;
         for (int j = i + 1; j < array.size(); j++) {
@@ -13,7 +13,7 @@ void calculator::selectionSort(std::vector<int>& array, std::function<bool(int, 
         }
     }
 }
-void calculator::doubleSelectionSort(std::vector<int>& array, std::function<bool(int, int)> comp) {
+void doubleSelectionSort(std::vector<int>& array, std::function<bool(int, int)> comp) {
     for (int i = 0, j = array.size() - 1; i < j; i++, j--) {
         int min = array[i], max = array[i];
         int min_i = i, max_i = i;
