@@ -1,8 +1,11 @@
 #include  <iostream>
 #include "mathFunctions.h"
+#include "arithmeticAndLogicOperators.h"
+#include "stringFunctions.h"
 #include <string>
-
+#include "Program.h"
+using namespace calculator;
 int main() {
-	cout << sum(5, 10);
-	return 0;
+	Program::main();
+
 }
