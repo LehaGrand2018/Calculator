@@ -12,7 +12,7 @@ int main() {
 	cout << factorial(5) << "\n";
 	cout << logarithm(EXP) << "\n";
 	cout << sqrt(5) << "\n";
-	cout << pow(5, 0.5) << "\n";
+	cout << pow(5, 0.5) << "\n"
 	return 0;
 
 }
